@@ -18,8 +18,6 @@ Category.init(
      unique: true,
      validate: {min: 1, max: 256}
     }
-
-    // define columns
   },
   {
     sequelize,

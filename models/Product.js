@@ -20,19 +20,16 @@ Product.init(
      allowNull: false,
      validate: {len: [1, 256]}
     },
-
      price: {
       type: DataTypes.DECIMAL(10,2),
       allowNull: false,
         validate: {min: 0, isDecimal: true}
       },
-
     stock: {
       type: DataTypes.INTEGER,
       allowNull: false,
       validate: {min: 0, isInt: true}
       },
-
      category_id: {
         type: DataTypes.INTEGER,
         references: {
@@ -40,8 +37,6 @@ Product.init(
           key: 'id',
         }
       },
-
-    // define columns
   },
   {
     sequelize,
